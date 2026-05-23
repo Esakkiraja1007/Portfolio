@@ -6,13 +6,14 @@
     <meta name="description" content="Premium Developer Portfolio - Showcase of projects and skills">
     <title>Portfolio | Creative Developer</title>
     
-    <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- Font Awesome Icons (No JS Required) -->
+    <!-- Font Awesome (load before style.css so theme icon display rules apply) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Theme toggle (CSS-only: body:has(#theme-toggle:checked)) -->
+    <input type="checkbox" id="theme-toggle" class="theme-toggle-input" aria-label="Toggle light mode">
 
     <!-- Header / Navigation -->
     <header id="header">
@@ -21,13 +22,6 @@
                 <img src="image/icon.jpg" alt="Logo" class="logo-img">
                 <span class="text-gradient">Portfolio</span>
             </div>
-            
-            <!-- Checkbox Hack for Mobile Menu -->
-            <input type="checkbox" id="nav-toggle-checkbox">
-            <label for="nav-toggle-checkbox" class="nav-toggle-label">
-                <i class="fas fa-bars menu-icon"></i>
-                <i class="fas fa-xmark close-icon"></i>
-            </label>
 
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -37,6 +31,20 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+
+            <div class="nav-actions">
+                <label for="theme-toggle" class="theme-toggle" title="Switch light / dark mode">
+                    <i class="fas fa-sun theme-icon-light" aria-hidden="true"></i>
+                    <i class="fas fa-moon theme-icon-dark" aria-hidden="true"></i>
+                </label>
+
+                <!-- Checkbox Hack for Mobile Menu -->
+                <input type="checkbox" id="nav-toggle-checkbox">
+                <label for="nav-toggle-checkbox" class="nav-toggle-label">
+                    <i class="fas fa-bars menu-icon"></i>
+                    <i class="fas fa-xmark close-icon"></i>
+                </label>
+            </div>
         </nav>
     </header>
 
@@ -46,8 +54,9 @@
             <div class="container hero-content">
                 <div class="hero-text">
                     <span class="badge">Available for Projects</span>
-                    <h1>Hello, I'm <br><span class="text-gradient">Creative Dev</span></h1>
-                    <p>I build immersive digital experiences with modern web technologies. Specializing in high-performance web applications and premium UI/UX design.</p>
+                    <h1>Hello, I'm <br><span class="text-gradient">Esakki Raja</span></h1>
+                    <p>Frontend Developer and recent IT graduate passionate about building modern and responsive web applications.
+                        Focused on clean UI, smooth user experience, and modern frontend technologies.</p>
                     <div class="hero-btns">
                         <a href="#projects" class="btn btn-primary">View My Work</a>
                         <a href="image/Esakkiraja.pdf" class="btn btn-secondary" target="_blank">Download CV</a>
@@ -73,18 +82,18 @@
                 <div class="about-content">
                     <span class="section-subtitle">Who I Am</span>
                     <h2 class="section-title">About Me</h2>
-                    <p>I am a passionate developer with a keen eye for detail. I believe that every line of code should contribute to a better user experience. With expertise in front-end and back-end development, I bridge the gap between design and functionality.</p>
+                    <p>I am a fresher front-end developer focused on building clean, responsive interfaces. I work with modern frameworks and tools like HTML, CSS, JavaScript, React, and Bootstrap to turn designs into fast, user-friendly websites. I enjoy learning new technologies and improving every project I build.</p>
                     <div class="stats grid-three">
                         <div class="stat-item">
-                            <h4>3+</h4>
-                            <p>Years Exp.</p>
+                            <h4>Fresher</h4>
+                            <p>Experience</p>
                         </div>
                         <div class="stat-item">
-                            <h4>50+</h4>
+                            <h4>3</h4>
                             <p>Projects</p>
                         </div>
                         <div class="stat-item">
-                            <h4>15+</h4>
+                            <h4>0</h4>
                             <p>Clients</p>
                         </div>
                     </div>
@@ -142,10 +151,10 @@
                             <img src="image/Portfolio_project.png" alt="Project 1" class="project-img">
                         </div>
                         <div class="project-info">
-                            <h3>E-Commerce Platform</h3>
-                            <p>A full-stack online store with real-time inventory management.</p>
+                            <h3>Portfolio</h3>
+                            <p>A responsive personal portfolio built with HTML and CSS, featuring smooth navigation, project showcase, skills section, and a contact form with light/dark mode.</p>
                             <div class="project-links">
-                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="https://github.com/Esakkiraja1007/Portfolio.git" target="_blank"><i class="fab fa-github"></i></a>
                                 <a href="#"><i class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
@@ -156,10 +165,10 @@
                             <img src="image/project2.png" alt="Project 2" class="project-img">
                         </div>
                         <div class="project-info">
-                            <h3>Fitness Tracker App</h3>
-                            <p>A mobile application for tracking workouts and nutrition.</p>
+                            <h3>Ecommerce Webpage</h3>
+                            <p>A front-end e-commerce website with product listings, category layout, and shopping-style UI designed for a clean online store experience.</p>
                             <div class="project-links">
-                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="https://github.com/Esakkiraja1007/Ecommerce-webpage.git" target="_blank"><i class="fab fa-github"></i></a>
                                 <a href="#"><i class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
@@ -203,18 +212,41 @@
         <!-- Contact Section -->
         <section id="contact" class="section contact">
             <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p>Have a project in mind? Let's build something amazing together.</p>
+                </div>
                 <div class="contact-card glass-panel grid-two">
                     <div class="contact-info">
-                        <h2 class="section-title">Get In Touch</h2>
-                        <p>Have a project in mind? Let's build something amazing together.</p>
+                        <span class="badge contact-badge">Open for Projects</span>
+                        <h3 class="contact-heading">Let's build something great</h3>
+                        <p class="contact-intro">I'm available for freelance work, collaborations, and full-time opportunities. Share your idea and I'll get back to you as soon as possible.</p>
+
+                        <div class="contact-highlights">
+                            <div class="contact-highlight-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <strong>24–48 hrs</strong>
+                                    <span>Typical response</span>
+                                </div>
+                            </div>
+                            <div class="contact-highlight-item">
+                                <i class="fas fa-globe"></i>
+                                <div>
+                                    <strong>Remote</strong>
+                                    <span>Worldwide clients</span>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="contact-details">
                             <div class="detail-item">
                                 <i class="fas fa-envelope"></i>
-                                <span>hello@example.com</span>
-                            </div>
+                                <a href="mailto:rajaesakki288@gmail.com">rajaesakki288@gmail.com</a>
+                           </div>
                             <div class="detail-item">
                                 <i class="fas fa-map-marker-alt"></i>
-                                <span>New York, USA</span>
+                                <span>Tirunelveli, Tamil Nadu, India</span>
                             </div>
                         </div>
                     </div>
@@ -244,9 +276,8 @@
                     <span class="text-gradient">Portfolio</span>
                 </div>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-x-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/esakki-raja-30244824b" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Esakkiraja1007" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
             </div>
             <div class="footer-bottom">
