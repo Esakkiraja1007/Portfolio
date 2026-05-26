@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio website repository! This project serves as my digital home, showcasing my tech stack, recent web development projects, and services as a Frontend Developer. 
 
-✨ **Live Demo:** [Esakki Raja Portfolio](https://esakkiraja1007.github.io/Portfolio/)
+✨ **Live Demo:** [Esakki Raja Portfolio](esakkiraja-portfolio.vercel.app)
 
 ---
 
