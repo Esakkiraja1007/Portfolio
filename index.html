@@ -9,26 +9,49 @@
     <meta name="robots" content="index, follow">
     <title>Esakki Raja | Frontend Developer</title>
     <link rel="icon" type="image/jpeg" href="image/icon.jpg">
-    <link rel="canonical" href="https://esakkiraja1007.github.io/Portfolio/">
+    <link rel="canonical" href="https://esakkiraja-portfolio.vercel.app/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Esakki Raja | Frontend Developer Portfolio">
     <meta property="og:description" content="Explore Esakki Raja's portfolio showcasing modern web applications, responsive designs, and clean UI interfaces built with React, CSS, and Bootstrap.">
-    <meta property="og:image" content="https://esakkiraja1007.github.io/Portfolio/image/hero_image.jpg">
-    <meta property="og:url" content="https://esakkiraja1007.github.io/Portfolio/">
+    <meta property="og:image" content="https://esakkiraja-portfolio.vercel.app/image/hero_image.jpg">
+    <meta property="og:url" content="https://esakkiraja-portfolio.vercel.app/">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:title" content="Esakki Raja | Frontend Developer Portfolio">
     <meta property="twitter:description" content="Explore Esakki Raja's portfolio showcasing modern web applications, responsive designs, and clean UI interfaces built with React, CSS, and Bootstrap.">
-    <meta property="twitter:image" content="https://esakkiraja1007.github.io/Portfolio/image/hero_image.jpg">
+    <meta property="twitter:image" content="https://esakkiraja-portfolio.vercel.app/image/hero_image.jpg">
     
     <!-- Font Awesome (load before style.css so theme icon display rules apply) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Esakki Raja",
+      "jobTitle": "Frontend Developer",
+      "url": "https://esakkiraja-portfolio.vercel.app/",
+      "sameAs": [
+        "https://github.com/Esakkiraja1007",
+        "https://www.linkedin.com/in/esakki-raja-30244824b"
+      ],
+      "knowsAbout": ["HTML5", "CSS3", "JavaScript", "React", "Bootstrap", "Git", "Web Development", "UI/UX Design", "Responsive Design"],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Tirunelveli",
+        "addressRegion": "Tamil Nadu",
+        "addressCountry": "India"
+      }
+    }
+    </script>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to Content</a>
 
     <!-- Theme toggle (CSS-only: body:has(#theme-toggle:checked)) -->
     <input type="checkbox" id="theme-toggle" class="theme-toggle-input" aria-label="Toggle light mode">
@@ -57,8 +80,8 @@
                 </label>
 
                 <!-- Checkbox Hack for Mobile Menu -->
-                <input type="checkbox" id="nav-toggle-checkbox">
-                <label for="nav-toggle-checkbox" class="nav-toggle-label">
+                <input type="checkbox" id="nav-toggle-checkbox" aria-label="Toggle Mobile Menu">
+                <label for="nav-toggle-checkbox" class="nav-toggle-label" aria-hidden="true">
                     <i class="fas fa-bars menu-icon"></i>
                     <i class="fas fa-xmark close-icon"></i>
                 </label>
@@ -66,7 +89,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main-content">
         <!-- Hero Section -->
         <section id="home" class="hero">
             <div class="container hero-content">
@@ -172,8 +195,8 @@
                             <h3>Portfolio</h3>
                             <p>A responsive personal portfolio built with HTML and CSS, featuring smooth navigation, project showcase, skills section, and a contact form with light/dark mode.</p>
                             <div class="project-links">
-                                <a href="https://github.com/Esakkiraja1007/Portfolio.git" target="_blank"><i class="fab fa-github"></i></a>
-                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/Esakkiraja1007/Portfolio.git" target="_blank" aria-label="View Portfolio source code on GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                                <a href="#" aria-label="View live demo of Portfolio"><i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
                             </div>
                         </div>
                     </div>
@@ -186,8 +209,8 @@
                             <h3>Ecommerce Webpage</h3>
                             <p>A front-end e-commerce website with product listings, category layout, and shopping-style UI designed for a clean online store experience.</p>
                             <div class="project-links">
-                                <a href="https://github.com/Esakkiraja1007/Ecommerce-webpage.git" target="_blank"><i class="fab fa-github"></i></a>
-                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/Esakkiraja1007/Ecommerce-webpage.git" target="_blank" aria-label="View Ecommerce Webpage source code on GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                                <a href="#" aria-label="View live demo of Ecommerce Webpage"><i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
                             </div>
                         </div>
                     </div>
@@ -204,23 +227,23 @@
                 </div>
                 <div class="services-grid">
                     <div class="service-item glass-panel">
-                        <img src="image/service1.jpg" alt="Service 1" class="service-img" loading="lazy">
-                        <h4>Web Development</h4>
+                        <img src="image/service1.jpg" alt="Web Development Illustration" class="service-img" loading="lazy">
+                        <h3>Web Development</h3>
                         <p>Custom websites built with modern frameworks.</p>
                     </div>
                     <div class="service-item glass-panel">
-                        <img src="image/service2.jpg" alt="Service 2" class="service-img" loading="lazy">
-                        <h4>UI/UX Design</h4>
+                        <img src="image/service2.jpg" alt="User Interface and Experience Design Illustration" class="service-img" loading="lazy">
+                        <h3>UI/UX Design</h3>
                         <p>User-centric designs that are functional.</p>
                     </div>
                     <div class="service-item glass-panel">
-                        <img src="image/service3.jpg" alt="Service 3" class="service-img" loading="lazy">
-                        <h4>Optimization</h4>
+                        <img src="image/service3.jpg" alt="Website Speed and Search Engine Optimization Illustration" class="service-img" loading="lazy">
+                        <h3>Optimization</h3>
                         <p>Improving site performance and SEO.</p>
                     </div>
                     <div class="service-item glass-panel">
-                        <img src="image/service4.jpg" alt="Service 4" class="service-img" loading="lazy">
-                        <h4>Support</h4>
+                        <img src="image/service4.jpg" alt="Customer Support and Maintenance Illustration" class="service-img" loading="lazy">
+                        <h3>Support</h3>
                         <p>Maintenance and 24/7 technical support.</p>
                     </div>
                 </div>
@@ -259,24 +282,27 @@
 
                         <div class="contact-details">
                             <div class="detail-item">
-                                <i class="fas fa-envelope"></i>
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
                                 <a href="mailto:rajaesakki288@gmail.com">rajaesakki288@gmail.com</a>
                            </div>
                             <div class="detail-item">
-                                <i class="fas fa-map-marker-alt"></i>
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                                 <span>Tirunelveli, Tamil Nadu, India</span>
                             </div>
                         </div>
                     </div>
                     <form class="contact-form" action="https://formspree.io/f/mredyglg" method="POST">
                         <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
+                            <label for="form-name" class="sr-only">Your Name</label>
+                            <input type="text" id="form-name" name="name" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
+                            <label for="form-email" class="sr-only">Your Email</label>
+                            <input type="email" id="form-email" name="email" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                            <label for="form-message" class="sr-only">Your Message</label>
+                            <textarea id="form-message" name="message" placeholder="Your Message" rows="5" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary w-full">Send Message</button>
                     </form>
@@ -294,12 +320,12 @@
                     <span class="text-gradient">Portfolio</span>
                 </div>
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/esakki-raja-30244824b" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/Esakkiraja1007" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/esakki-raja-30244824b" target="_blank" aria-label="Esakki Raja LinkedIn Profile"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://github.com/Esakkiraja1007" target="_blank" aria-label="Esakki Raja GitHub Profile"><i class="fab fa-github" aria-hidden="true"></i></a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Creative Dev. All rights reserved.</p>
+                <p>&copy; 2026 Creative Dev. All rights reserved.</p>
             </div>
         </div>
     </footer>

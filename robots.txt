@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://esakkiraja1007.github.io/Portfolio/sitemap.xml
+Sitemap: https://esakkiraja-portfolio.vercel.app/sitemap.xml
