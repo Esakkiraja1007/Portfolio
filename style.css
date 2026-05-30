@@ -175,7 +175,7 @@ body:has(.theme-toggle-input:focus-visible) .theme-toggle {
 
 /* --- Header & Navigation --- */
 header {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -423,7 +423,7 @@ body:has(#theme-toggle:checked) .theme-toggle i.theme-icon-dark {
 
 /* --- Hero Section --- */
 .hero {
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     padding-top: 5rem;
@@ -953,6 +953,9 @@ body:has(#theme-toggle:checked) .theme-toggle i.theme-icon-dark {
 
 /* --- Responsive Media Queries --- */
 @media (max-width: 1024px) {
+    .hero{
+        height: auto;
+    }
     .hero-text h1 { font-size: 3.5rem; }
     .grid-two { gap: 2rem; }
 }
@@ -963,6 +966,9 @@ body:has(#theme-toggle:checked) .theme-toggle i.theme-icon-dark {
     }
 
     .hero {
+        height: auto;
+        min-height: 70vh;
+        
         padding-top: 6rem;
         min-height: auto;
     }
